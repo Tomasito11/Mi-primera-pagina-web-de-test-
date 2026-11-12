@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Greda & El Fogón | Cocina Tradicional Chilena</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAF6F0; /* Crema cálido / papel artesanal */
+      color: #2C1E16; /* Café tierra profundo */
+    }
+    h1, h2, h3, .font-editorial {
+      font-family: 'Fraunces', serif;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#C05638] selection:text-white">
+
+  <!-- NAVEGACIÓN -->
+  <header class="fixed w-full top-0 z-50 bg-[#FAF6F0]/95 backdrop-blur-md border-b border-[#E5D7C6]">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-full bg-[#C05638] flex items-center justify-center text-[#FAF6F0]">
+          <i data-lucide="flame" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="font-editorial text-xl font-bold text-[#2C1E16] block leading-none">La Greda & El Fogón</span>
+          <span class="text-[11px] uppercase tracking-widest text-[#8C6D58] font-semibold">Cocina Chilena</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-8 text-sm font-semibold text-[#5C4332]">
+        <a href="#inicio" class="hover:text-[#C05638] transition">Inicio</a>
+        <a href="#carta" class="hover:text-[#C05638] transition">Nuestra Carta</a>
+        <a href="#galeria" class="hover:text-[#C05638] transition">El Rincón</a>
+        <a href="#resenas" class="hover:text-[#C05638] transition">Reseñas</a>
+        <a href="#ubicacion" class="hover:text-[#C05638] transition">Ubicación</a>
+      </nav>
+
+      <a href="https://wa.me/56912345678?text=Hola,%20quisiera%20reservar%20una%20mesa%20en%20La%20Greda%20%26%20El%20Fog%C3%B3n" target="_blank"
+         class="bg-[#C05638] hover:bg-[#A64429] text-white font-semibold text-sm px-5 py-2.5 rounded-full transition shadow-sm flex items-center gap-2">
+        <i data-lucide="calendar-heart" class="w-4 h-4"></i>
+        <span>Reservar Mesa</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO / PORTADA -->
+  <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-[#EFE4D6] text-[#9E4228] text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          Recetas de campo y horno de barro
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-bold text-[#2C1E16] leading-[1.1]">
+          El sabor de la mesa chilena, servido en <span class="text-[#C05638] italic">greda caliente</span>.
+        </h1>
+        
+        <p class="text-[#5C4332] text-lg leading-relaxed">
+          Cocinamos a fuego lento con productos de temporada, carnes braseadas, pastel de choclo recién salido del horno y el cariño de las picadas tradicionales de siempre.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+          <a href="#carta" class="bg-[#2C1E16] hover:bg-[#432E22] text-[#FAF6F0] font-semibold px-8 py-4 rounded-full transition text-center shadow-md">
+            Explorar la Carta
+          </a>
+          <a href="https://wa.me/56912345678?text=Hola,%20quisiera%20pedir%20para%20retiro%20en%20local" target="_blank"
+             class="bg-[#EFE4D6] hover:bg-[#E4D3BE] text-[#2C1E16] font-semibold px-8 py-4 rounded-full transition flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-5 h-5 text-[#2D6A4F]"></i>
+            Pedir por WhatsApp
+          </a>
+        </div>
+
+        <!-- Datos de confianza rápidos -->
+        <div class="pt-6 border-t border-[#E5D7C6] grid grid-cols-3 gap-4">
+          <div>
+            <p class="font-editorial text-2xl font-bold text-[#C05638]">+15 años</p>
+            <p class="text-xs text-[#6E5341] font-medium">De tradición familiar</p>
+          </div>
+          <div>
+            <p class="font-editorial text-2xl font-bold text-[#C05638]">4.9 ★</p>
+            <p class="text-xs text-[#6E5341] font-medium">En Google Maps</p>
+          </div>
+          <div>
+            <p class="font-editorial text-2xl font-bold text-[#C05638]">100%</p>
+            <p class="text-xs text-[#6E5341] font-medium">Ingredientes locales</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen Hero con marco artesanal -->
+      <div class="lg:col-span-6 relative">
+        <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85" 
+               alt="Asado y cocina tradicional chilena" class="w-full h-full object-cover" />
+        </div>
+        <!-- Tarjeta flotante -->
+        <div class="hidden sm:flex items-center gap-3 bg-white p-4 rounded-2xl shadow-xl border border-[#E5D7C6] absolute -bottom-6 -left-6">
+          <div class="w-12 h-12 rounded-xl bg-[#FAF6F0] flex items-center justify-center text-[#C05638]">
+            <i data-lucide="utensils" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <p class="text-xs text-[#8C6D58] font-semibold uppercase">Recomendación del Chef</p>
+            <p class="font-editorial font-bold text-[#2C1E16]">Pastel de Choclo en Paila</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN CARTA DIGITAL -->
+  <section id="carta" class="py-20 px-4 bg-[#F3EAE0] border-y border-[#E5D7C6]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-[#C05638] font-bold text-xs uppercase tracking-widest">Sabores de nuestra tierra</span>
+        <h2 class="text-3xl md:text-5xl font-bold text-[#2C1E16] mt-2 mb-4">Nuestra Carta</h2>
+        <p class="text-[#5C4332]">Todos nuestros platos principales incluyen pebre cuchareado de la casa y pan amasado tibio.</p>
+      </div>
+
+      <!-- Filtros de categoría -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <button onclick="filtrarMenu('todos', this)" class="btn-filtro bg-[#C05638] text-white font-semibold px-6 py-2.5 rounded-full text-sm transition shadow-sm">
+          Todos los platos
+        </button>
+        <button onclick="filtrarMenu('entradas', this)" class="btn-filtro bg-white text-[#5C4332] hover:bg-[#E8DACA] font-semibold px-6 py-2.5 rounded-full text-sm transition border border-[#E5D7C6]">
+          Para Compartir
+        </button>
+        <button onclick="filtrarMenu('fondos', this)" class="btn-filtro bg-white text-[#5C4332] hover:bg-[#E8DACA] font-semibold px-6 py-2.5 rounded-full text-sm transition border border-[#E5D7C6]">
+          Platos de Fondo
+        </button>
+        <button onclick="filtrarMenu('postres', this)" class="btn-filtro bg-white text-[#5C4332] hover:bg-[#E8DACA] font-semibold px-6 py-2.5 rounded-full text-sm transition border border-[#E5D7C6]">
+          Postres & Brebajes
+        </button>
+      </div>
+
+      <!-- Grid de platos -->
+      <div id="grid-menu" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+    </div>
+  </section>
+
+  <!-- GALERÍA DEL LOCAL -->
+  <section id="galeria" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-[#C05638] font-bold text-xs uppercase tracking-widest">Nuestro espacio</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-[#2C1E16] mt-2">Un rincón con historia</h2>
+        </div>
+        <p class="text-[#5C4332] max-w-md text-sm md:text-base">
+          Salones amplios de madera nativa, terraza sombreada por parrones y el calor de nuestro horno de barro a la vista.
+        </p>
+      </div>
+
+      <!-- Mosaico fotográfico -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden h-80 md:h-full relative group">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" 
+               alt="Salón principal del restaurante" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#2C1E16]/70 via-transparent to-transparent flex items-end p-6">
+            <span class="text-white font-editorial text-xl font-bold">Salón Principal & Cava</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden h-60 relative group">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" 
+               alt="Terraza exterior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#2C1E16]/70 via-transparent to-transparent flex items-end p-5">
+            <span class="text-white font-semibold text-sm">Terraza bajo el Parrón</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden h-60 relative group">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" 
+               alt="Mesa servida" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#2C1E16]/70 via-transparent to-transparent flex items-end p-5">
+            <span class="text-white font-semibold text-sm">Mesas Familiares</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 rounded-3xl overflow-hidden h-60 relative group">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=80" 
+               alt="Selección de vinos chilenos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#2C1E16]/70 via-transparent to-transparent flex items-end p-5">
+            <span class="text-white font-semibold text-sm">Vinos del Valle del Maipo & Colchagua</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS DE CLIENTES -->
+  <section id="resenas" class="py-20 px-4 bg-[#2C1E16] text-[#FAF6F0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-[#E07A5F] font-bold text-xs uppercase tracking-widest">Lo que dicen nuestros comensales</span>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Sabores que dejan huella</h2>
+        <p class="text-[#D4C3B3]">Más de 450 familias nos recomiendan cada mes por nuestra atención y porciones generosas.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Reseña 1 -->
+        <div class="bg-[#3A281E] p-7 rounded-3xl border border-[#4E372A] flex flex-col justify-between">
+          <div>
+            <div class="flex text-[#E07A5F] gap-1 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-[#EFE4D6] text-sm leading-relaxed mb-6">
+              "El mejor pastel de choclo que he probado en Santiago. Llega hirviendo en su paila de greda y el pino tiene un sabor casero increíble. El pan amasado con pebre de entrada es imperdible."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-[#4E372A]">
+            <div class="w-10 h-10 rounded-full bg-[#C05638] flex items-center justify-center font-bold text-sm">CM</div>
+            <div>
+              <p class="font-semibold text-sm text-white">Camila Muñoz</p>
+              <p class="text-xs text-[#B8A392]">Reseña verificada en Google</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 2 -->
+        <div class="bg-[#3A281E] p-7 rounded-3xl border border-[#4E372A] flex flex-col justify-between">
+          <div>
+            <div class="flex text-[#E07A5F] gap-1 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-[#EFE4D6] text-sm leading-relaxed mb-6">
+              "Fuimos a celebrar el cumpleaños de mi papá el domingo. La plateada al jugo se cortaba con cuchara y la atención fue súper cálida y rápida. Sin duda volveremos."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-[#4E372A]">
+            <div class="w-10 h-10 rounded-full bg-[#8C6D58] flex items-center justify-center font-bold text-sm">RV</div>
+            <div>
+              <p class="font-semibold text-sm text-white">Rodrigo Valenzuela</p>
+              <p class="text-xs text-[#B8A392]">Reseña verificada en Google</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 3 -->
+        <div class="bg-[#3A281E] p-7 rounded-3xl border border-[#4E372A] flex flex-col justify-between">
+          <div>
+            <div class="flex text-[#E07A5F] gap-1 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-[#EFE4D6] text-sm leading-relaxed mb-6">
+              "Ambiente precioso, muy acogedor y con precios súper justos para la calidad y tamaño de los platos. El terremoto y los picarones pasados cerraron el almuerzo perfecto."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-[#4E372A]">
+            <div class="w-10 h-10 rounded-full bg-[#C05638] flex items-center justify-center font-bold text-sm">FS</div>
+            <div>
+              <p class="font-semibold text-sm text-white">Fernanda Soto</p>
+              <p class="text-xs text-[#B8A392]">Reseña verificada en Google</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN Y HORARIOS -->
+  <section id="ubicacion" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-[#E5D7C6] grid lg:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <span class="text-[#C05638] font-bold text-xs uppercase tracking-widest">Te esperamos</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#2C1E16]">Horarios y Ubicación</h2>
+        <p class="text-[#5C4332] text-sm">Contamos con estacionamiento privado para clientes y acceso universal.</p>
+
+        <div class="space-y-4 pt-2">
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-[#FAF6F0] rounded-2xl text-[#C05638]">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base text-[#2C1E16]">Dirección</h3>
+              <p class="text-[#5C4332] text-sm">Camino El Volcán 4520, Puente Alto, Región Metropolitana</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-[#FAF6F0] rounded-2xl text-[#C05638]">
+              <i data-lucide="clock" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base text-[#2C1E16]">Horarios</h3>
+              <p class="text-[#5C4332] text-sm">Martes a Viernes: 12:30 – 22:30 hrs</p>
+              <p class="text-[#5C4332] text-sm">Sábado y Domingo: 12:00 – 19:00 hrs</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-[#FAF6F0] rounded-2xl text-[#C05638]">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base text-[#2C1E16]">Reservas y Eventos</h3>
+              <p class="text-[#5C4332] text-sm">+56 9 1234 5678 · contacto@lagredayelfogon.cl</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-80 md:h-96 rounded-2xl overflow-hidden border border-[#E5D7C6]">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53166.97495736345!2d-70.6126397!3d-33.6067651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d7037854df81%3A0x893f58a1479b8f82!2sPuente%20Alto%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1700000000000" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 px-4 border-t border-[#E5D7C6] text-center text-[#6E5341] text-sm">
+    <p class="font-editorial font-bold text-[#2C1E16] text-base mb-1">La Greda & El Fogón</p>
+    <p>© 2026 Cocina Tradicional Chilena. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/56912345678?text=Hola,%20vengo%20desde%20la%20p%C3%A1gina%20web" target="_blank"
+     aria-label="Reservar por WhatsApp"
+     class="fixed bottom-6 right-6 z-50 bg-[#2D6A4F] hover:bg-[#22523C] text-white px-5 py-3.5 rounded-full shadow-xl transition transform hover:scale-105 flex items-center gap-2 font-semibold text-sm">
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span class="hidden sm:inline">WhatsApp</span>
+  </a>
+
+  <!-- DATOS DEL MENÚ -->
+  <script>
+    const platos = [
+      {
+        nombre: "Empanadas de Pino al Horno (2 un.)",
+        categoria: "entradas",
+        precio: "$6.400",
+        etiqueta: "Clásico",
+        imagen: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=700&q=80",
+        descripcion: "Masa tradicional dorada en horno de barro, carne picada a cuchillo, huevo duro, aceituna de Azapa y pasas."
+      },
+      {
+        nombre: "Machas a la Parmesana (12 un.)",
+        categoria: "entradas",
+        precio: "$11.900",
+        etiqueta: "Del Mar",
+        imagen: "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=700&q=80",
+        descripcion: "Gratinadas al instante con queso mantecoso del sur, toque de vino blanco y mantequilla."
+      },
+      {
+        nombre: "Pastel de Choclo en Paila",
+        categoria: "fondos",
+        precio: "$12.500",
+        etiqueta: "Favorito",
+        imagen: "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=700&q=80",
+        descripcion: "Pastelera de choclo pastelero con albahaca fresca sobre pino de carne, presa de pollo de campo y huevo."
+      },
+      {
+        nombre: "Plateada al Jugo con Puré Rústico",
+        categoria: "fondos",
+        precio: "$14.800",
+        etiqueta: "Cocción 6 hrs",
+        imagen: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80",
+        descripcion: "Corte tierno braseado lentamente en vino tinto y verduras, acompañado de puré con merken ahumado."
+      },
+      {
+        nombre: "Cazuela de Vacuno de Campo",
+        categoria: "fondos",
+        precio: "$11.500",
+        etiqueta: "Tradición",
+        imagen: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=700&q=80",
+        descripcion: "Caldo sustancioso con tapapecho, zapallo camote, choclo, papa, porotos verdes y cilantro fresco."
+      },
+      {
+        nombre: "Picarones Pasados en Chancaca",
+        categoria: "postres",
+        precio: "$5.200",
+        etiqueta: "Dulce",
+        imagen: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80",
+        descripcion: "Masa artesanal de zapallo recién frita, bañada en salsa caliente de chancaca con cáscara de naranja y canela."
+      }
+    ];
+
+    const gridMenu = document.getElementById('grid-menu');
+
+    function renderizarMenu(filtro = 'todos') {
+      gridMenu.innerHTML = '';
+      const filtrados = filtro === 'todos' ? platos : platos.filter(p => p.categoria === filtro);
+      
+      filtrados.forEach(plato => {
+        gridMenu.innerHTML += `
+          <div class="bg-white rounded-3xl overflow-hidden border border-[#E5D7C6] shadow-sm hover:shadow-md transition flex flex-col">
+            <div class="h-48 relative overflow-hidden">
+              <img src="${plato.imagen}" alt="${plato.nombre}" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+              <span class="absolute top-3 left-3 bg-[#FAF6F0]/95 text-[#9E4228] text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                ${plato.etiqueta}
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start gap-3 mb-2">
+                  <h3 class="font-editorial font-bold text-xl text-[#2C1E16] leading-snug">${plato.nombre}</h3>
+                  <span class="font-bold text-lg text-[#C05638] whitespace-nowrap">${plato.precio}</span>
+                </div>
+                <p class="text-[#5C4332] text-sm leading-relaxed">${plato.descripcion}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function filtrarMenu(categoria, botonActivo) {
+      document.querySelectorAll('.btn-filtro').forEach(btn => {
+        btn.classList.remove('bg-[#C05638]', 'text-white', 'shadow-sm');
+        btn.classList.add('bg-white', 'text-[#5C4332]', 'border', 'border-[#E5D7C6]');
+      });
+      botonActivo.classList.remove('bg-white', 'text-[#5C4332]', 'border', 'border-[#E5D7C6]');
+      botonActivo.classList.add('bg-[#C05638]', 'text-white', 'shadow-sm');
+
+      renderizarMenu(categoria);
+    }
+
+    lucide.createIcons();
+    renderizarMenu();
+  </script>
+</body>
+</html>
